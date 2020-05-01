@@ -132,26 +132,6 @@ body {
       opacity: 0.5;
   }
   
-  .fa-facebook {
-    background: #3B5998;
-    color: green;
-  }
-  
-  .fa-twitter {
-    background: #3B5998;
-    color: white;
-  }
-  
- 
-  .fa-youtube {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #3B5998;
-    color: white;
-  }
   
   #example img {
     width: 100%;
@@ -163,3 +143,46 @@ body {
     background-image: url("../carousel/slide2.jpg");
     background-position: center;
   }
+  .footer {
+    max-width: 70%;
+    margin: 1rem auto;
+    overflow: auto;
+  }
+  
+  .footer,
+  .footer a {
+    color: #999;
+    font-size: 0.9rem;
+  }
+  
+  .footer p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+  
+  .footer li {
+    line-height: 1.9;
+    list-style-type: none;
+  }
+  
+  .footer .lang-select {
+    margin-top: 2rem;
+    color: #999;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #333;
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+  }
+  .alert_user{
+    color:gray;
+  }
+  .alert_icon{
+    color:gray;
+  }
+  
