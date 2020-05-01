@@ -19,13 +19,37 @@
     <title>Profile</title>
     <style>
       body {
+        background-color: black;
+      }
+      main {
         max-width: 50%;
         margin: auto;
+      }
+      input {
+        width: 30px;
+        height: 30px;
       }
     </style>
   </head>
   <body>
-  
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html"
+        ><img src="./logos/netflix.png" width="120"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+    </nav>
     <main>
     
       <div class="container">
@@ -35,11 +59,11 @@
             <i class="fas fa-user fa-5x"></i>
           </div>
           <div class="col-8">
-            <h1>User</h1>
-            <h2>Language:</h2>
+            <button class="p-2 h3">User Profile</button>
+            <h2 class="text-light">Language:</h2>
             <div class="dropdown">
               <button
-                class="btn btn-secondary dropdown-toggle"
+                class="btn btn-dark dropdown-toggle border-light"
                 type="button"
                 id="dropdownMenuButton"
                 data-toggle="dropdown"
@@ -55,27 +79,46 @@
               </div>
             </div>
             <hr />
-            <h5>Maturity Settings:</h5>
-            <button class="p-1">ALL MATURITY RATINGS</button>
-            <p>Show titles of all maturity ratings for this profile</p>
-            <button class="p-1">EDIT</button>
+            <h5 class="text-light border-top border-light pt-5">
+              Maturity Settings:
+            </h5>
+            <button class="p-1 bg-dark border-light text-light mt-2 mb-2">
+              ALL MATURITY RATINGS
+            </button>
+            <p class="text-light">
+              Show titles of all maturity ratings for this profile
+            </p>
+            <button class="p-1 bg-dark border-light">EDIT</button>
             <hr />
-            <h5>Autoplay controls</h5>
-            <input class="p-3" type="checkbox"> Autoplay next episode in a series on all devices
-            <br>
-            <input class="p-3" type="checkbox"> Autoplay previous whilst browing on all devices
+            <h5 class="text-light border-light border-top pt-3">
+              Autoplay controls
+            </h5>
+            <div>
+              <input class="mt-2" type="checkbox" />
+              <span class="text-light">
+                Autoplay next episode in a series on all devices
+              </span>
+              <br />
+              <input class="mb-5" type="checkbox" />
+              <span class="text-light">
+                Autoplay previous whilst browing on all devices
+              </span>
+            </div>
           </div>
-
         </div>
-        <hr>
-        <div class="row">
+
+        <div class="row border-top border-light">
           <div class="col">
-            <button type="button" class="btn btn-light btn-lg">SAVE</button>
-            <button type="button" class="btn btn-dark btn-lg">CANCEL</button>
-            <button type="button" class="btn btn-dark btn-lg">DELETE PROFILE</button>
-
+            <button type="button" class="btn btn-light btn-lg mr-2 mt-5">
+              SAVE
+            </button>
+            <button type="button" class="btn btn-dark btn-lg mr-2 mt-5">
+              CANCEL
+            </button>
+            <button type="button" class="btn btn-dark btn-lg mt-5">
+              DELETE PROFILE
+            </button>
           </div>
-
         </div>
       </div>
     </main>
